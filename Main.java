@@ -35,14 +35,14 @@ public class Main
 	System.out.println ("Please enter the city at which the salseman has to reach.");//prompt the user to enter the name of a city at which the salseman has to reach.
 	String end = myObj.nextLine ();//accept the name of the city and put it in a string named end
 	
-	  try //try-catch to chck if the entered city is in the list "input" or not.
+	  try //try-catch to check if the entered city is in the list "input" or not.
 	{
 
 	  mypathfinder = new pathfinder (start, end, input);
 	  /*Find the shortest path from the city "start" to the city "end" by creating the instance of pathfinder 
 	  and calling the parametarized constructor.
 	  For that, we need to pass the citylist 'input' to it. 
-	  It first chekcs if the two city names we passed, i.e. start and end are in the list or not. 
+	  It first checks if the two city names we passed, i.e. start and end are in the list or not. 
 	  If exist, then pathfinder finds the shortest path which we will extract later.
 	  If he do not exist in the citylist, then the constructor throws ArrayIndexOutOfBoundsException, which is catched.
 	  */
