@@ -1,5 +1,5 @@
 import java.util.*;
- 
+
 public class cityList
 // This is the class which is made for storing city objects as a list.
 {
@@ -70,7 +70,8 @@ public class cityList
   {
     double temp = 0; // temparory variable to store the sum.
     for (int i = 0; i <= (listOfCities.size() - 2); i++) {
-      temp = temp + complex.distanceBetweenComplexPoints(listOfCities.get(i).coordinates, listOfCities.get(i + 1).coordinates);
+      temp = temp
+          + complex.distanceBetweenComplexPoints(listOfCities.get(i).coordinates, listOfCities.get(i + 1).coordinates);
     }
     return temp;
   }

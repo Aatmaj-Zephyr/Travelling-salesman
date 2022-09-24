@@ -1,5 +1,3 @@
-import java.util.*;
-
 public class pathfinder {
   // This class does the work of finding the shortest path.
 
