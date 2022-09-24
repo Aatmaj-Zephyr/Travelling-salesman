@@ -52,7 +52,7 @@ public class city {
     }
   }
 
-  public static boolean equals(city a, String b) { // Two cities are same if their names are equal
+  public static boolean equalsByString(city a, String b) { // Two cities are same if their names are equal
     if (b.equals(a.cityName)) {
       return true;
     } else {
@@ -60,7 +60,7 @@ public class city {
     }
   }
 
-  public static boolean equals(String b, city a) { // Two cities are same if their names are equal
+  public static boolean equalsByString(String b, city a) { // Two cities are same if their names are equal
     if (b.equals(a.cityName)) {
       return true;
     } else {

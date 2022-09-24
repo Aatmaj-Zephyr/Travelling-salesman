@@ -22,8 +22,8 @@ public class cityList
    * We can give parameters of city, city name or coordinates.
    */
   public boolean hasCityByCityObj(city a) {
-
     for (int j = 0; j < listOfCities.size(); j++) {
+
       if (city.equals(listOfCities.get(j), a) == true) {
         return true;
       }
@@ -33,7 +33,7 @@ public class cityList
 
   public boolean hasCityByStringName(String a) {
     for (int j = 0; j < listOfCities.size(); j++) {
-      if (city.equals(listOfCities.get(j), a) == true) {
+      if (city.equalsByString(listOfCities.get(j), a) == true) {
         return true;
       }
     }
@@ -44,9 +44,9 @@ public class cityList
     return hasCityByCityObj(new city(a, b));
   }
 
-  public void copyFromCitylist(cityList a) {
+  public void createNewCopyFromCitylist(cityList a) {
+    // clears existing city list
     // method to set values of another citylist into this citylist.
-
     listOfCities.clear();
     for (int i = 0; i < a.listOfCities.size(); i++) {
       listOfCities.add(a.listOfCities.get(i));
@@ -117,7 +117,7 @@ public class cityList
 
   public int getPositionByString(String a) {
     for (int j = 0; j < listOfCities.size(); j++) {
-      if (city.equals(listOfCities.get(j), a) == true) {
+      if (city.equalsByString(listOfCities.get(j), a) == true) {
         return j;
       }
     }
