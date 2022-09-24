@@ -4,11 +4,11 @@ public class city {
   complex coordinates;
   // The position of the city stored as complex coordinates.
 
-  String name;
+  String cityName;
   // name of the city.
 
-  citylist neighbours;
-  // the neighbours of the city stored in a citylist.
+  cityList neighbours;
+  // the neighbours of the city stored in a cityList.
   // Note that the neighbors are those from whome path to the city can lead. This is useful for
   // one-way aths as well.
 
@@ -17,21 +17,21 @@ public class city {
       {
     coordinates = new complex(x, y); // set coordinates
 
-    neighbours = new citylist(); // instantiate neighbours
-    name = new String(); // instantiate name.
+    neighbours = new cityList(); // instantiate neighbours
+    cityName = new String(); // instantiate name.
   }
 
-  city(double x, double y, String myname) {
+  city(double x, double y, String cityName) {
     // another parametrized constructor.
     // In case someone wans to add name at the time of making instances.
     this(x, y);
-    setname(myname);
+    setName(cityName);
   }
 
-  public void setname(String myname)
+  public void setName(String cityName)
         // To set the name of the city.
       {
-    name = myname;
+    this.cityName = cityName;
   }
 
   /*The equals methods
@@ -52,7 +52,7 @@ public class city {
   }
 
   public static boolean equals(city a, String b) { // Two cities are same if their names are equal
-    if (b.equals(a.name)) {
+    if (b.equals(a.cityName)) {
       return true;
     } else {
       return false;
@@ -60,7 +60,7 @@ public class city {
   }
 
   public static boolean equals(String b, city a) { // Two cities are same if their names are equal
-    if (b.equals(a.name)) {
+    if (b.equals(a.cityName)) {
       return true;
     } else {
       return false;

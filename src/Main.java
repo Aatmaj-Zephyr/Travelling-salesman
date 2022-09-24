@@ -9,7 +9,7 @@ public class Main {
     // We can use it for running the program on different different cities and different different
     // paths.
 
-    citylist input = in.set("Cities.txt", "Neighbours.txt");
+    cityList input = in.setCityNeighbours("/Users/aatmaj/Travelling-salesman/src/Cities.txt", "/Users/aatmaj/Travelling-salesman/src/Neighbours.txt");
     // This will make instances of the city objects with positions(coordinates) as given in the
     // "coordinates.txt" file,
     // and set the available paths from the "paths.txt" file. Then this cities instances are
@@ -66,7 +66,7 @@ public class Main {
     }
 
     System.out.print("The path is ");
-    mypathfinder.printpathname();
+    mypathfinder.printShortestPathName();
     // directly print the shortest path. We can extract it using methods, buthere in this case
     // direct printing is easier.
 

@@ -10,7 +10,7 @@ public class complex {
     imaginary = b;
   }
 
-  static double dist(complex a, complex b) {
+  static double distanceBetweenComplexPoints(complex a, complex b) {
     // distance between two complex coordinates.
     return complex.abs(complex.sub(a, b));
   }
